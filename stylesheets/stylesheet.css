@@ -6,6 +6,17 @@ body {
   font: 16px;
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    background: radial-gradient(#000 15%, rgba(0, 0, 0, 0) 16%) 0 0,radial-gradient(#000 15%, rgba(0, 0, 0, 0) 16%) 8px 8px,radial-gradient(rgba(255, 255, 255, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 0 1px,radial-gradient(rgba(255, 255, 255, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px;
+}
+#main_content{
+    background: #151515 url("../images/bkg.png") 0 0;
+  color: #eaeaea;
+  padding: 5px;
+-moz-box-shadow: 0px 0px 30px #000000;
+-webkit-box-shadow: 0px 0px 30px #000000;
+box-shadow: 0px 0px 30px #000000;
 }
 
 /* General & 'Reset' Stuff */
