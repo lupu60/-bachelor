@@ -8,11 +8,11 @@ module.exports = function(grunt) {
                 options: {
                     outputDirectory: 'pdf'
                 },
-                src: ['bachelor.tex']
+                src: ['main.tex']
             }
         },
           watch: {
-    tex: {
+    latex: {
       files: ['*.tex','./_includ/*.tex'],
       tasks: ['latex'],
       options: {
@@ -23,5 +23,5 @@ module.exports = function(grunt) {
     });
     grunt.loadNpmTasks('grunt-latex');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['latex','watch']);
 };
